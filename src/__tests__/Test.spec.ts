@@ -1,5 +1,5 @@
 import 'jest'
-import { mount,} from '@vue/test-utils'
+import { shallowMount,} from '@vue/test-utils'
 import Counter from './Test.vue'
 
 // const Counter = {
@@ -15,7 +15,7 @@ import Counter from './Test.vue'
 // }
 
 test('increments counter value on click', async () => {
-  const wrapper = mount(Counter)
+  const wrapper = shallowMount(Counter)
   const button = wrapper.find('button')
   const text = wrapper.find('p')
 
